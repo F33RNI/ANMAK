@@ -39,6 +39,24 @@
 
 This is a project of a remote key fob for controlling gates / barriers from AN-Motors (or others if they do not have encryption and use OOK modulation at a frequency of ~ 433MHz). AN-Motors uses similar packets to keeloq but without encryption
 
+----------
+
+### How to build one
+
+For build you'll need:
+1. Atmega328P or arduino nano / mini / micro etc...
+2. Cheap 433MHz transmitter module (popular green PCBs. Often solds with a receiver)
+3. TP4056 charger module with build-in protection
+4. Any small LiPo or LiIon battery (for example from disposable vapes)
+5. 16MHz crystal oscillator, 2x22pF capacitors and 1M resistor for it (if using Atmega328)
+6. BC547 NPN transistor or any other small NPN transistor, 1K and 10K resistors for charger detection circuit
+7. Button + 10K resistor
+8. 3 LEDs + 3x470 resistors
+9. Some other capacitors and resistors (see schematic)
+10. Plastic case (For example, from tic tac, as in the photo
+
+----------
+
 1. Using the rtl-433 project (Keeloq packets) or any other method, get a packet from your gate / barrier
     * Example of demodulated AN-Motors packet for ID 0x12345AB (0x0DA2C48): https://triq.org/pdv/#AAB0160401019803381010271880808080808080808080808255+AAB04C0401019803381010271890908190909090909090819090819090818181908181908181818190818190819090908190908190909081819081909090819081819081908190818190819090818355
     * Packet consists of 4 same packets:
