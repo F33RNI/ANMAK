@@ -57,14 +57,14 @@ This is a project of a remote key fob for controlling gates / barriers from AN-M
 2. Exctract ID from the packet in big-endian format. **NOTE: rtl433 shows ID in little-endian. If you use the ID from rtl_433, you need to flip it**
     * Example of packet: 00100000001001001110110111101101**0001001000110100010110101011**010011. So, ID is `0001001000110100010110101011` in BIN or `12345AB` in HEX
 
-3. Put this ID (28-bit) to the code
+3. Using Platformio or Arduino IDE (convert `ANMAK/blob/main/src/main.cpp` to `.ino` format) open the code
 
-4. Put button code to the code
+4. Put this ID (28-bit) to the code
+
+5. Put button code to the code
     * Example of packet: 001000000010**0100**11101101111011010001001000110100010110101011**0100**11. So, 1st button is pressed with code `0100` in BIN
 
-5. Assemble device with whatever you find
-
-6. Using Platformio or Arduino IDE (convert `ANMAK/blob/main/src/main.cpp` to `.ino` format) open the code
+6. Assemble device with whatever you find
 
 7. Uncomment `REF_CALIBRATION`, measure AREF voltage in mV and put into the VREF_ACTUAL_MV `variable`
 
