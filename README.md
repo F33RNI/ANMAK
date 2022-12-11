@@ -64,6 +64,8 @@ This is a project of a remote key fob for controlling gates / barriers from AN-M
 
 5. Assemble device with whatever you find
 
-6. Uncomment `REF_CALIBRATION`, measure AREF voltage in mV and put into the VREF_ACTUAL_MV `variable`
+6. Using Platformio or Arduino IDE (convert `ANMAK/blob/main/src/main.cpp` to `.ino` format) open the code
 
-7. Comment `REF_CALIBRATION`, upload code, connect battery. Done!
+7. Uncomment `REF_CALIBRATION`, measure AREF voltage in mV and put into the VREF_ACTUAL_MV `variable`
+
+8. Comment `REF_CALIBRATION`, upload code, connect battery. Done!
