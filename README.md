@@ -53,7 +53,7 @@ For build you'll need:
 7. Button + 10K resistor
 8. 3 LEDs + 3x470 resistors
 9. Some other capacitors and resistors (see schematic)
-10. Plastic case (For example, from tic tac, as in the photo
+10. Plastic case (For example, from tic tac, as in the photo)
 
 ----------
 
